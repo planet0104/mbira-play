@@ -1,6 +1,7 @@
 # mbira-play
 
-拇指琴音符指示器
+硬件电路图
+<img src="https://github.com/planet0104/mbira-play/blob/master/hardware.jpg" />
 
 ## player
 
