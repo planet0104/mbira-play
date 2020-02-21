@@ -1,0 +1,24 @@
+[package]
+name = "mbira_play"
+version = "1.0.0"
+authors = ["Jia Ye <planet0104@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[target.thumbv7m-none-eabi.dependencies]
+cortex-m-rt = "0.6.12"
+cortex-m = "0.6.2"
+alloc-cortex-m = "0.3.5"
+# cortex-m-semihosting = "0.3.5"
+panic-semihosting = "0.5.3"
+embedded-hal = "0.2.3"
+stm32f1xx-hal = {version = "0.5.3",features = ["stm32f103", "rt"] }
+
+[profile.dev]
+#debug = true
+lto = true
+
+[profile.release]
+# debug = true
+lto = true

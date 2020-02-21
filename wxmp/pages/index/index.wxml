@@ -1,0 +1,50 @@
+<wxs module="utils">
+module.exports.max = function(n1, n2) {
+  return Math.max(n1, n2)
+}
+module.exports.len = function(arr) {
+  arr = arr || []
+  return arr.length
+}
+</wxs>
+<view class="info">
+  <icon type="info" size="18" color="gray"></icon>
+  <text>{{status}}</text>
+</view>
+<view class="buttons">
+<button type="primary" bindtap="openBluetoothAdapter">连接</button>
+<button hidden="true" bindtap="stopBluetoothDevicesDiscovery">停止扫描</button>
+<button type="warn" bindtap="closeBluetoothAdapter">关闭</button>
+</view>
+<picker class="picker-box" bindchange="onMusicChange" value="{{musicIndex}}" range="{{musics}}">
+  <view class="picker">
+    {{musics[musicIndex]}} <image class="arrow" src="images/arrow.png"></image>
+  </view>
+</picker>
+<view class="music-string">
+  <text>{{musicString}}</text>
+</view>
+<view class="control">
+  <picker class="picker-box-ctrl" bindchange="onStartSectionChange" value="{{startSection}}" range="{{musicSections}}">
+    <view class="picker">
+      第{{musicSections[startSection]}}节 <image class="arrow" src="images/arrow.png"></image><text space="ensp"> 至 </text>
+    </view>
+  </picker>
+  <picker class="picker-box-ctrl" bindchange="onEndSectionChange" value="{{endSection}}" range="{{musicSections}}">
+    <view class="picker">
+      第{{musicSections[endSection]}}节 <image class="arrow" src="images/arrow.png"></image>
+    </view>
+  </picker>
+  <picker class="picker-box-ctrl" bindchange="onBpmChange" value="{{bpm}}" range="{{musicBpm}}">
+    <view class="picker picker-bpm">
+      {{musicBpm[bpm]}}BPM <image class="arrow" src="images/arrow.png"></image>
+    </view>
+  </picker>
+</view>
+<checkbox-group hidden="true" bindchange="onCheckBoxChange" class="checkbox">
+  <label><checkbox value="loop" checked="false"/>循环播放</label>
+</checkbox-group>
+<button class="button-play" type="default" bindtap="startPlay">开始练习</button>
+<view class="info">
+  <text>{{recvMessage}}</text>
+</view>

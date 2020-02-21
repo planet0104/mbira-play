@@ -1,0 +1,113 @@
+page {
+  color: #fff;
+  background-color: #333;
+}
+.info{
+  padding-top: 2pt;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  justify-content:center;
+}
+.info icon{
+  margin-top: 14px;
+  margin-right: -10px;
+}
+.info text{
+  color: #bbb;
+  border-radius: 2pt;
+  margin: 5pt;
+  padding: 5pt;
+  font-weight: bold;
+  font-size: 10pt;
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+  padding-top: 10pt;
+  padding-right: 5pt;
+  padding-left: 5pt;
+}
+.buttons button{
+  margin-left: 5pt;
+  margin-right: 5pt;
+  padding-top: 10pt;
+  padding-bottom: 10pt;
+  width: 50%;
+}
+
+.picker-box{
+  display: flex;
+  justify-content:center;
+  padding-top: 20pt;
+}
+.picker{
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.arrow{
+  width: 20pt;
+  height: 20pt;
+  opacity: 0.5;
+  margin-left: -4pt;
+  margin-bottom: -4pt;
+}
+
+.music-string{
+  width: 100%;
+  color: #f4f4f4;
+  opacity: 0.7;
+  display: flex;
+  justify-content:center;
+  padding-top: 20pt;
+  padding-bottom: 20pt;
+}
+
+.music-string text{
+  margin-right: 40pt;
+  margin-left: 40pt;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* .picker-box-ctrl{
+  display: flex;
+  justify-content:center;
+  padding-top: 20pt;
+} */
+
+.control{
+  display: flex;
+  justify-content:center;
+}
+
+.picker-box-ctrl .picker{
+  font-size: 16pt;
+  opacity: 0.9;
+  color: #febf2c;
+}
+
+.picker-box-ctrl .arrow{
+  width: 16pt;
+  height: 16pt;
+  margin-left: -4pt;
+  margin-bottom: -2pt;
+}
+
+.button-play{
+  margin-top: 20pt;
+  padding-top: 10 pt;
+  padding-bottom: 10pt;
+  width: 100%;
+}
+
+.checkbox{
+  padding-top: 10pt;
+  display: flex;
+  justify-content:center;
+}
+
+.picker-bpm{
+  padding-left: 5pt;
+}
